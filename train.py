@@ -212,7 +212,8 @@ def validate(opt, val_loader, model):
     tb_logger.log_value('r10i', r10i, step=model.Eiters)
     tb_logger.log_value('medri', medri, step=model.Eiters)
     tb_logger.log_value('meanr', meanr, step=model.Eiters)
-    tb_logger.log_value('rsum', currscore, step=model.Eiters)
+    tb_logger.log_value('rsum', 
+    rrscore, step=model.Eiters)
 
     return currscore
 
